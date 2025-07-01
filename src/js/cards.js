@@ -89,5 +89,3 @@ export const generalDeckOfCards = [
   aH,
   aS,
 ];
-
-// export let shuffledDeck = shuffleArray(generalDeckOfCards);

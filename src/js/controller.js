@@ -67,6 +67,8 @@ class CardGame {
         this._volumeControl.dispatchEvent(new Event('input'));
       }
     });
+
+    this._preloadImages();
   }
 
   _startGame() {
@@ -169,6 +171,13 @@ class CardGame {
     this._drawSound.pause();
     this._drawSound.currentTime = 0;
     this._drawSound.play();
+  }
+
+  _preloadImages() {
+    generalDeckOfCards.forEach(card => {
+      const img = new Image();
+      img.src = `img/cards/${card.img}.png`;
+    });
   }
 }
 
