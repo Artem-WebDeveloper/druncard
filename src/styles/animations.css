@@ -1,0 +1,150 @@
+/* ANIMATIONS */
+
+@keyframes opponentStroke {
+  0% {
+    opacity: 0;
+    transform: translateY(-16rem) translateX(-30rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes playerStroke {
+  0% {
+    opacity: 0;
+    transform: translateY(16rem) translateX(30rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes startGame {
+  0% {
+    opacity: 0;
+    transform: translateY(-50rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes startGameText {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes descriptionAppearance {
+  0% {
+    transform: translateX(200rem);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes cardQuantityUpdate {
+  0% {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+}
+
+@keyframes borderAnimation {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes cardWinner {
+  0% {
+    transform: scale(1.04);
+  }
+
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes endGameModal {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+
+  30% {
+    transform: translate(-50%, -50%) scale(0.4);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes infoRound {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateY(-2.5rem);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-4.5rem);
+  }
+}
+
+@keyframes infoRoundDraw {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-2.5rem);
+    opacity: 1;
+  }
+}

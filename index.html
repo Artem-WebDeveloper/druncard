@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <!-- <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/animations.css" /> -->
+    <title>Druncard</title>
+    <script src="src/js/controller.js" defer type="module"></script>
+  </head>
+  <body>
+    <audio id="bg-music" src="audio/bg-music.mp3" loop></audio>
+    <main class="main">
+      <section class="start-screen">
+        <img src="img/logo.webp" alt="Logo" class="start-screen__logo" />
+        <p><span class="start-screen__start">♥️Начать игру♠️</span></p>
+      </section>
+
+      <section class="gameplay-screen hidden">
+        <img src="img/logo.webp" alt="logo" class="side-logo" />
+
+        <section class="opponent-section">
+          <div class="opponent-section__deck">
+            <img src="img/cards/deck.png" alt="Deck" class="img-card" />
+          </div>
+
+          <div class="opponent-section__info">
+            <p>Соперник</p>
+
+            <span class="opponent-section__quantity-cards">18</span>
+            <!-- <span class="update-cards update-cards--opponent update-cards--plus"
+              >+1</span
+            > -->
+
+            <!-- <span
+              class="update-cards update-cards--opponent update-cards--minus"
+              >-1</span
+            > -->
+          </div>
+        </section>
+
+        <section class="player-section">
+          <div class="player-section__info">
+            <!-- <span class="update-cards update-cards--player update-cards--plus"
+              >+1</span
+            > -->
+            <!-- <span class="update-cards update-cards--player update-cards--minus"
+              >-1</span
+            > -->
+            <span class="player-section__quantity-cards">18</span>
+            <p>Ваша колода</p>
+          </div>
+          <div class="player-section__deck">
+            <img src="img/cards/deck.png" alt="Deck" class="img-card" />
+          </div>
+        </section>
+
+        <section class="start-description hidden">
+          <p>🔥🃏 Вас ждёт простая, но захватывающая карточная битва. 🃏🔥</p>
+          <p>
+            У каждого по 18 карт. Вы по очереди открываете верхние карты из
+            своей колоды — чья карта старше, тот забирает обе. Побеждает тот,
+            кто заберёт все карты соперника.✅
+          </p>
+          <p>Готовы проверить свою удачу?🍀</p>
+          <p>Вперёд, в бой!</p>
+          <button
+            class="button-stroke button-stroke--first"
+            id="btn-first-stroke"
+          >
+            СДЕЛАТЬ ПЕРВЫЙ ХОД
+          </button>
+        </section>
+
+        <section class="battle-field hidden">
+          <!-- <div class="battle-field__card battle-field__card--opponent">
+            <img
+              src="img/cards/K_h.png"
+              alt="Card"
+              class="img-card"
+              id="opponent-card"
+            />
+          </div>
+
+          <div class="battle-field__card battle-field__card--player">
+            <img
+              src="img/cards/A_d.png"
+              alt="Card"
+              class="img-card"
+              id="player-card"
+            />
+          </div> -->
+        </section>
+
+        <section class="section-winlostrounds-info">
+          <!-- <p class="winlostrounds-info__text">🤜 Ничья 🤛</p> -->
+          <!-- <p class="winlostrounds-info__text">⚡Победа!⚡</p> -->
+          <!-- <p class="winlostrounds-info__text">Проигрыш ☹️</p> -->
+        </section>
+
+        <section class="section-rate hidden">
+          <p class="rate-info">
+            🔥Карт на кону - <span class="rate__count">1</span>*
+
+            <span class="clue-box">
+              <span class="clue-box__description">
+                🎴 Ничья! Все карты переходят на кон. Тот, кто выиграет
+                следующий раунд, заберёт все накопленные карты. *Указано кол-во
+                потенциально получаемых/потерянных карт
+              </span>
+            </span>
+          </p>
+        </section>
+
+        <button class="button-stroke hidden" id="btn-next-stroke">
+          Следующий ход↖️
+        </button>
+        <button class="button-reset">Сброс 🔄️</button>
+
+        <div class="volume">
+          <label for="volume-control">
+            <span class="volume__icon">🔊</span></label
+          >
+          <input
+            type="range"
+            id="volume-control"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.5"
+          />
+        </div>
+      </section>
+
+      <!--   <div class="modal">
+        <div class="modal__box">
+          <div class="modal__content">
+            <div class="modal__text">
+              <h2>Ты победил! 🏆</h2>
+              <p>Поздравляю с победой! 🎉</p>
+              <div class="modal__thanks">
+                <p>Это мой первый проект :)</p>
+                <p>Cпасибо, что дошли до конца! ♥️</p>
+                <p>
+                  Надеюсь, игра принесла вам удовольствие, и вы сыграете еще! 🎲
+                </p>
+              </div>
+              <button class="button-game-end">Закончить игру</button>
+            </div>
+
+            <div class="modal__img">
+              <img src="img/won.gif" alt="Man dancing" />
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </main>
+  </body>
+</html>
