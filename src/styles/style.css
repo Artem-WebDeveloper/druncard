@@ -369,10 +369,9 @@ body {
   gap: 3rem;
 
   grid-area: 2 / 2 / 3 / 3;
-
+  min-height: 18.4rem;
   .battle-field__card {
     width: 33%;
-
     @media (max-width: 75em) {
       width: 45%;
     }
