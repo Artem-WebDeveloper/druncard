@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles/style.css" />
-    <link rel="preload" as="audio" href="./audio/bg-music.mp3" />
     <!-- <link rel="stylesheet" href="./styles/components.css" />
     <link rel="stylesheet" href="./styles/animations.css" /> -->
     <title>Druncard</title>
     <script src="src/js/controller.js" defer type="module"></script>
   </head>
   <body>
-    <audio id="bg-music" src="audio/bg-music.mp3" loop></audio>
+    <audio id="bg-music" src="audio/bg-music.mp3" loop preload="auto"></audio>
     <main class="main">
       <section class="start-screen">
         <img src="img/logo.webp" alt="Logo" class="start-screen__logo" />
