@@ -31,7 +31,7 @@ html {
   }
 
   @media (max-width: 37.5em) {
-    font-size: 43.75%;
+    font-size: 37.5%;
   }
 
   @media (min-width: 112.5em) {
@@ -172,6 +172,10 @@ body {
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 1fr 2fr 1fr;
   transition: all 0.5s;
+
+  @media (max-width: 37.5em) {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 /* OPPONENT */
@@ -370,6 +374,10 @@ body {
 
   grid-area: 2 / 2 / 3 / 3;
   min-height: 18.4rem;
+
+  @media (max-width: 37.5em) {
+    min-width: 100%;
+  }
   .battle-field__card {
     width: 33%;
     @media (max-width: 75em) {
